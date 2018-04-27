@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-fff-web",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A vue plugin for use within the fff workflow.",
   "main": "index.js",
   "scripts": {
