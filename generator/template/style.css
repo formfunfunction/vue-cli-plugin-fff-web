@@ -1,0 +1,10 @@
+/*
+Theme Name: <%= options.pkgName %>
+Theme URI: https://blacksheepdesign.co.nz/
+Author: Blacksheepdesign
+Author URI: https://blacksheepdesign.co.nz/
+Description: 
+Version: 1.0
+License: Private
+Text Domain: <%= options.pkgName %>
+*/

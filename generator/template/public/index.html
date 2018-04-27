@@ -1,0 +1,21 @@
+---
+extend: '@vue/cli-service/generator/template/public/index.html'
+replace:
+  - !!js/regexp /<head>[^]*?<meta charset="utf-8">/
+  - !!js/regexp /<div id="app"></div>[^]*?</html>/
+---
+
+<%# REPLACE %>
+  <head>
+    <!-- PHP functions used by WordPress. Is ignored in development mode. -->
+    <?php wp_head(); ?>
+    <meta charset="utf-8">
+    <%# END_REPLACE %>
+
+<%# REPLACE %>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <?php wp_footer(); ?>
+  </body>
+</html>
+<%# END_REPLACE %>
