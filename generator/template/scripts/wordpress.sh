@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
-mkdir -p /var/www/html
-cd /var/www/html
+mkdir -p /var/www/dist
+cd /var/www/dist
 
-if [ ! -d "/var/www/html/wp-admin" ]; then
+if [ ! -d "/var/www/dist/wp-admin" ]; then
     # Control will enter here if $DIRECTORY doesn't exist.
     wp core download
 fi
 
-if [ -f "/var/www/html/wp-config.php" ]; then
+if [ -f "/var/www/dist/wp-config.php" ]; then
     # Control will enter here if $DIRECTORY doesn't exist.
     echo "wp-config.php already exists, creating backup..."
     mv wp-config.php wp-config.php.backup

@@ -78,7 +78,7 @@ else
 
 fi
 
-rsync -r html/wp-content/themes/<%= options.pkgName %>/ $REMOTE:/var/www/${publish_domain}/site_files/htdocs/wp-content/themes/<%= options.pkgName %>/
+rsync -r dist/wp-content/themes/<%= options.pkgName %>/ $REMOTE:/var/www/${publish_domain}/site_files/htdocs/wp-content/themes/<%= options.pkgName %>/
 
 echo
 printf "# ${GREEN}Cleaning up ...${NC}\n"

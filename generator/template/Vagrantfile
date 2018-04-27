@@ -8,6 +8,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "scripts/wordpress.sh", privileged: false
   config.trigger.before :destroy do
    info "Dumping the database before destroying the VM..."
-   run_remote  "rm -f /var/www/html/wp-config.php && mysqldump --databases wordpress -u root > /vagrant/dev-database.sql"
+   run_remote  "rm -f /var/www/dist/wp-config.php && mysqldump --databases wordpress -u root > /vagrant/dev-database.sql"
   end
 end
